@@ -5,7 +5,7 @@
   "name": "WynnSource",
   "description": "A mod for crowdsourcing various in-game data.",
   "authors": [
-    "<https://github.com/FYWinds>"
+    "FYWinds"
   ],
   "license": "AGPL-3.0",
   "icon": "assets/wynnsource/icon.png",
@@ -31,5 +31,13 @@
   },
   "suggests": {
     "flamingo": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/8Wv9yDmxSC",
+        "modmenu.source": "https://github.com/FYWinds/WynnSource"
+      }
+    }
   }
 }
