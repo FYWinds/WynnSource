@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "fyi.fyw.wynnsource.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "AspectInfoAccessor",
+    "ClientPacketListenerMixin",
+    "MinecraftClientMixin",
+    "ShinyStatTypesAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+  ]
+}

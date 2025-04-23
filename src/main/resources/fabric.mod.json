@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "wynnsource",
+  "version": "${version}",
+  "name": "WynnSource",
+  "description": "A mod for crowdsourcing various in-game data.",
+  "authors": [
+    "<https://github.com/FYWinds>"
+  ],
+  "license": "AGPL-3.0",
+  "icon": "assets/wynnsource/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "fyi.fyw.wynnsource.WynnSourceEntry"
+      }
+    ]
+  },
+  "mixins": [
+    "wynnsource.mixins.json"
+  ],
+  "accessWidener": "wynnsource.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.21.4",
+    "wynntils": "*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
