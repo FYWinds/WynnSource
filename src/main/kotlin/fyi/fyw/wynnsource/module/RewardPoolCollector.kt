@@ -6,6 +6,8 @@ import com.wynntils.models.items.WynnItem
 import com.wynntils.models.items.WynnItemData
 import com.wynntils.models.items.items.game.AspectItem
 import com.wynntils.models.items.items.game.GearItem
+import com.wynntils.models.items.items.game.InsulatorItem
+import com.wynntils.models.items.items.game.SimulatorItem
 import com.wynntils.models.stats.type.ShinyStatType
 import com.wynntils.utils.mc.LoreUtils
 import fyi.fyw.wynnsource.WynnSourceEntry
@@ -84,6 +86,14 @@ object RewardPoolCollector {
 
                                 else -> throw IllegalStateException("Unreachable when case")
                             }
+                        }
+
+                        is SimulatorItem -> {
+                            poolDetail.mythic.add("Corkian Simulator")
+                        }
+
+                        is InsulatorItem -> {
+                            poolDetail.mythic.add("Corkian Insulator")
                         }
 
                         else -> {}
